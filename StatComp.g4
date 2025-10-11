@@ -16,7 +16,7 @@ expr
     | '(' expr ')'                        # exprPar
     | num                                 # exprLiteral
     | ID                                  # exprVar
-    | ID '[' expr ']'                     # exprArrayAccess
+    | ID '[' pos ']'                     # exprArrayAccess
     ;
 
 arrayInit
@@ -25,7 +25,7 @@ arrayInit
 
 num  : INT | FLOAT ;
 decltype : TINT | TFLOAT ;
-
+pos : INT ;
 // Scanner
 POW    : '^' ;
 ADD    : '+' ;

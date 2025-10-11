@@ -143,5 +143,14 @@ class StatCompListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by StatCompParser#pos.
+    def enterPos(self, ctx:StatCompParser.PosContext):
+        pass
+
+    # Exit a parse tree produced by StatCompParser#pos.
+    def exitPos(self, ctx:StatCompParser.PosContext):
+        pass
+
+
 
 del StatCompParser

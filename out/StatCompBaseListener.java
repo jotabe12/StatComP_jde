@@ -191,6 +191,18 @@ public class StatCompBaseListener implements StatCompListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDecltype(StatCompParser.DecltypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPos(StatCompParser.PosContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPos(StatCompParser.PosContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

@@ -178,4 +178,14 @@ public interface StatCompListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDecltype(StatCompParser.DecltypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link StatCompParser#pos}.
+	 * @param ctx the parse tree
+	 */
+	void enterPos(StatCompParser.PosContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link StatCompParser#pos}.
+	 * @param ctx the parse tree
+	 */
+	void exitPos(StatCompParser.PosContext ctx);
 }
