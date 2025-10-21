@@ -7,7 +7,7 @@ from generated.StatCompLexer import StatCompLexer
 from generated.StatCompParser import StatCompParser
 
 
-class MyErrorListener(ErrorListener):
+ MyErrorListener(ErrorListener):
     def syntaxError(self,recognizer, offendingSymbol, line, col, msg, e):
         print(f"[Warning] Error de sintaxis en linea {line}, columna {col}: {msg}")
 
