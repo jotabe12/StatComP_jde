@@ -1,2 +1,4 @@
 # archivos ignorados localmente
 /build/
+
+.cache/clangd/index
