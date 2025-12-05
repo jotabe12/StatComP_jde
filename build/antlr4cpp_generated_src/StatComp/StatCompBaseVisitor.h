@@ -1,5 +1,5 @@
 
-// Generated from /home/mayta/Desktop/CompilersTheory/StatComP/StatComp.g4 by ANTLR 4.13.2
+// Generated from /home/mayta/projects/CompilersTheory/StatComP/src/StatComp.g4 by ANTLR 4.13.2
 
 #pragma once
 
@@ -47,6 +47,10 @@ public:
     return visitChildren(ctx);
   }
 
+  virtual std::any visitExprString(StatCompParser::ExprStringContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
   virtual std::any visitExprVar(StatCompParser::ExprVarContext *ctx) override {
     return visitChildren(ctx);
   }
@@ -79,6 +83,10 @@ public:
     return visitChildren(ctx);
   }
 
+  virtual std::any visitArglist(StatCompParser::ArglistContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
   virtual std::any visitArrayInit(StatCompParser::ArrayInitContext *ctx) override {
     return visitChildren(ctx);
   }
@@ -87,19 +95,11 @@ public:
     return visitChildren(ctx);
   }
 
-  virtual std::any visitRow(StatCompParser::RowContext *ctx) override {
-    return visitChildren(ctx);
-  }
-
   virtual std::any visitNum(StatCompParser::NumContext *ctx) override {
     return visitChildren(ctx);
   }
 
   virtual std::any visitDecltype(StatCompParser::DecltypeContext *ctx) override {
-    return visitChildren(ctx);
-  }
-
-  virtual std::any visitPos(StatCompParser::PosContext *ctx) override {
     return visitChildren(ctx);
   }
 

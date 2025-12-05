@@ -1,5 +1,5 @@
 
-// Generated from /home/mayta/Desktop/CompilersTheory/StatComP/StatComp.g4 by ANTLR 4.13.2
+// Generated from /home/mayta/projects/CompilersTheory/StatComP/src/StatComp.g4 by ANTLR 4.13.2
 
 #pragma once
 
@@ -13,11 +13,14 @@ class  StatCompLexer : public antlr4::Lexer {
 public:
   enum {
     T__0 = 1, T__1 = 2, T__2 = 3, T__3 = 4, T__4 = 5, T__5 = 6, T__6 = 7, 
-    T__7 = 8, T__8 = 9, T__9 = 10, T__10 = 11, T__11 = 12, POW = 13, ADD = 14, 
-    SUB = 15, MUL = 16, DIV = 17, INTDIV = 18, MOD = 19, ASSIGN = 20, LPAR = 21, 
-    RPAR = 22, COLON = 23, LBRACE = 24, RBRACE = 25, LBRACK = 26, RBRACK = 27, 
-    COMMA = 28, TINT = 29, TFLOAT = 30, ARRAY = 31, ID = 32, INT = 33, FLOAT = 34, 
-    WS = 35
+    T__7 = 8, T__8 = 9, T__9 = 10, T__10 = 11, T__11 = 12, T__12 = 13, T__13 = 14, 
+    T__14 = 15, T__15 = 16, T__16 = 17, T__17 = 18, T__18 = 19, T__19 = 20, 
+    T__20 = 21, T__21 = 22, T__22 = 23, T__23 = 24, T__24 = 25, T__25 = 26, 
+    T__26 = 27, T__27 = 28, T__28 = 29, T__29 = 30, T__30 = 31, T__31 = 32, 
+    T__32 = 33, POW = 34, ADD = 35, SUB = 36, MUL = 37, DIV = 38, INTDIV = 39, 
+    MOD = 40, ASSIGN = 41, LPAR = 42, RPAR = 43, LBRACE = 44, RBRACE = 45, 
+    LBRACK = 46, RBRACK = 47, COMMA = 48, TINT = 49, TFLOAT = 50, TSTRING = 51, 
+    ARRAY = 52, ID = 53, INT = 54, FLOAT = 55, STRING = 56, WS = 57
   };
 
   explicit StatCompLexer(antlr4::CharStream *input);

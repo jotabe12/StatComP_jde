@@ -1,5 +1,5 @@
 
-// Generated from /home/mayta/Desktop/CompilersTheory/StatComP/StatComp.g4 by ANTLR 4.13.2
+// Generated from /home/mayta/projects/CompilersTheory/StatComP/src/StatComp.g4 by ANTLR 4.13.2
 
 
 #include "StatCompVisitor.h"
@@ -52,60 +52,65 @@ void statcompParserInitialize() {
 #endif
   auto staticData = std::make_unique<StatCompParserStaticData>(
     std::vector<std::string>{
-      "prog", "stmt", "expr", "statFunc", "tableFunc", "arrayInit", "numlist", 
-      "row", "num", "decltype", "pos"
+      "prog", "stmt", "expr", "statFunc", "tableFunc", "arglist", "arrayInit", 
+      "numlist", "num", "decltype"
     },
     std::vector<std::string>{
       "", "';'", "'Mean'", "'Median'", "'Mode'", "'Stdev'", "'Var'", "'Square_root'", 
-      "'Freq'", "'AbsFreq'", "'RelFreq'", "'AbsFreqCum'", "'RelFreqCum'", 
-      "'^'", "'+'", "'-'", "'*'", "'/'", "'//'", "'%'", "'='", "'('", "')'", 
-      "':'", "'{'", "'}'", "'['", "']'", "','", "'int'", "'float'", "'array'"
+      "'Range'", "'CoeffVar'", "'Quartile'", "'IQR'", "'Percentile'", "'Min'", 
+      "'Max'", "'Sum'", "'Count'", "'Skewness'", "'Kurtosis'", "'Moment'", 
+      "'Standardize'", "'ZProb'", "'InvZ'", "'NormalPDF'", "'NormalCDF'", 
+      "'UniformPDF'", "'UniformCDF'", "'Print'", "'Freq'", "'AbsFreq'", 
+      "'RelFreq'", "'AbsFreqCum'", "'RelFreqCum'", "'CrossTab'", "'^'", 
+      "'+'", "'-'", "'*'", "'/'", "'//'", "'%'", "'='", "'('", "')'", "'{'", 
+      "'}'", "'['", "']'", "','", "'int'", "'float'", "'string'", "'array'"
     },
     std::vector<std::string>{
-      "", "", "", "", "", "", "", "", "", "", "", "", "", "POW", "ADD", 
-      "SUB", "MUL", "DIV", "INTDIV", "MOD", "ASSIGN", "LPAR", "RPAR", "COLON", 
-      "LBRACE", "RBRACE", "LBRACK", "RBRACK", "COMMA", "TINT", "TFLOAT", 
-      "ARRAY", "ID", "INT", "FLOAT", "WS"
+      "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+      "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 
+      "POW", "ADD", "SUB", "MUL", "DIV", "INTDIV", "MOD", "ASSIGN", "LPAR", 
+      "RPAR", "LBRACE", "RBRACE", "LBRACK", "RBRACK", "COMMA", "TINT", "TFLOAT", 
+      "TSTRING", "ARRAY", "ID", "INT", "FLOAT", "STRING", "WS"
     }
   );
   static const int32_t serializedATNSegment[] = {
-  	4,1,35,124,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,
-  	7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,1,0,5,0,24,8,0,10,0,12,0,27,9,0,1,1,1,
-  	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,45,8,1,
-  	1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
-  	2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,71,8,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
-  	1,2,5,2,82,8,2,10,2,12,2,85,9,2,1,3,1,3,1,4,1,4,1,5,1,5,3,5,93,8,5,1,
-  	5,1,5,1,6,1,6,1,6,5,6,100,8,6,10,6,12,6,103,9,6,1,7,1,7,1,7,1,7,5,7,109,
-  	8,7,10,7,12,7,112,9,7,3,7,114,8,7,1,7,1,7,1,8,1,8,1,9,1,9,1,10,1,10,1,
-  	10,0,1,4,11,0,2,4,6,8,10,12,14,16,18,20,0,6,1,0,16,19,1,0,14,15,1,0,2,
-  	7,1,0,8,12,1,0,33,34,1,0,29,30,128,0,25,1,0,0,0,2,44,1,0,0,0,4,70,1,0,
-  	0,0,6,86,1,0,0,0,8,88,1,0,0,0,10,90,1,0,0,0,12,96,1,0,0,0,14,104,1,0,
-  	0,0,16,117,1,0,0,0,18,119,1,0,0,0,20,121,1,0,0,0,22,24,3,2,1,0,23,22,
-  	1,0,0,0,24,27,1,0,0,0,25,23,1,0,0,0,25,26,1,0,0,0,26,1,1,0,0,0,27,25,
-  	1,0,0,0,28,29,3,4,2,0,29,30,5,1,0,0,30,45,1,0,0,0,31,32,3,18,9,0,32,33,
-  	5,32,0,0,33,34,5,20,0,0,34,35,3,4,2,0,35,36,5,1,0,0,36,45,1,0,0,0,37,
-  	38,5,31,0,0,38,39,3,18,9,0,39,40,5,32,0,0,40,41,5,20,0,0,41,42,3,10,5,
-  	0,42,43,5,1,0,0,43,45,1,0,0,0,44,28,1,0,0,0,44,31,1,0,0,0,44,37,1,0,0,
-  	0,45,3,1,0,0,0,46,47,6,2,-1,0,47,48,5,15,0,0,48,71,3,4,2,10,49,50,5,21,
-  	0,0,50,51,3,4,2,0,51,52,5,22,0,0,52,71,1,0,0,0,53,71,3,16,8,0,54,71,5,
-  	32,0,0,55,56,5,32,0,0,56,57,5,26,0,0,57,58,3,20,10,0,58,59,5,27,0,0,59,
-  	71,1,0,0,0,60,61,3,6,3,0,61,62,5,21,0,0,62,63,3,4,2,0,63,64,5,22,0,0,
-  	64,71,1,0,0,0,65,66,3,8,4,0,66,67,5,21,0,0,67,68,3,4,2,0,68,69,5,22,0,
-  	0,69,71,1,0,0,0,70,46,1,0,0,0,70,49,1,0,0,0,70,53,1,0,0,0,70,54,1,0,0,
-  	0,70,55,1,0,0,0,70,60,1,0,0,0,70,65,1,0,0,0,71,83,1,0,0,0,72,73,10,9,
-  	0,0,73,74,5,13,0,0,74,82,3,4,2,10,75,76,10,8,0,0,76,77,7,0,0,0,77,82,
-  	3,4,2,9,78,79,10,7,0,0,79,80,7,1,0,0,80,82,3,4,2,8,81,72,1,0,0,0,81,75,
-  	1,0,0,0,81,78,1,0,0,0,82,85,1,0,0,0,83,81,1,0,0,0,83,84,1,0,0,0,84,5,
-  	1,0,0,0,85,83,1,0,0,0,86,87,7,2,0,0,87,7,1,0,0,0,88,89,7,3,0,0,89,9,1,
-  	0,0,0,90,92,5,24,0,0,91,93,3,12,6,0,92,91,1,0,0,0,92,93,1,0,0,0,93,94,
-  	1,0,0,0,94,95,5,25,0,0,95,11,1,0,0,0,96,101,3,16,8,0,97,98,5,28,0,0,98,
-  	100,3,16,8,0,99,97,1,0,0,0,100,103,1,0,0,0,101,99,1,0,0,0,101,102,1,0,
-  	0,0,102,13,1,0,0,0,103,101,1,0,0,0,104,113,5,24,0,0,105,110,3,16,8,0,
-  	106,107,5,28,0,0,107,109,3,16,8,0,108,106,1,0,0,0,109,112,1,0,0,0,110,
-  	108,1,0,0,0,110,111,1,0,0,0,111,114,1,0,0,0,112,110,1,0,0,0,113,105,1,
-  	0,0,0,113,114,1,0,0,0,114,115,1,0,0,0,115,116,5,25,0,0,116,15,1,0,0,0,
-  	117,118,7,4,0,0,118,17,1,0,0,0,119,120,7,5,0,0,120,19,1,0,0,0,121,122,
-  	5,33,0,0,122,21,1,0,0,0,9,25,44,70,81,83,92,101,110,113
+  	4,1,57,120,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,
+  	7,7,7,2,8,7,8,2,9,7,9,1,0,5,0,22,8,0,10,0,12,0,25,9,0,1,1,1,1,1,1,1,1,
+  	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,43,8,1,1,2,1,2,1,
+  	2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,63,
+  	8,2,1,2,1,2,1,2,1,2,1,2,3,2,70,8,2,1,2,1,2,3,2,74,8,2,1,2,1,2,1,2,1,2,
+  	1,2,1,2,1,2,1,2,1,2,5,2,85,8,2,10,2,12,2,88,9,2,1,3,1,3,1,4,1,4,1,5,1,
+  	5,1,5,5,5,97,8,5,10,5,12,5,100,9,5,1,6,1,6,3,6,104,8,6,1,6,1,6,1,7,1,
+  	7,1,7,5,7,111,8,7,10,7,12,7,114,9,7,1,8,1,8,1,9,1,9,1,9,0,1,4,10,0,2,
+  	4,6,8,10,12,14,16,18,0,6,1,0,37,40,1,0,35,36,1,0,2,27,1,0,28,33,1,0,54,
+  	55,1,0,49,51,127,0,23,1,0,0,0,2,42,1,0,0,0,4,73,1,0,0,0,6,89,1,0,0,0,
+  	8,91,1,0,0,0,10,93,1,0,0,0,12,101,1,0,0,0,14,107,1,0,0,0,16,115,1,0,0,
+  	0,18,117,1,0,0,0,20,22,3,2,1,0,21,20,1,0,0,0,22,25,1,0,0,0,23,21,1,0,
+  	0,0,23,24,1,0,0,0,24,1,1,0,0,0,25,23,1,0,0,0,26,27,3,4,2,0,27,28,5,1,
+  	0,0,28,43,1,0,0,0,29,30,3,18,9,0,30,31,5,53,0,0,31,32,5,41,0,0,32,33,
+  	3,4,2,0,33,34,5,1,0,0,34,43,1,0,0,0,35,36,5,52,0,0,36,37,3,18,9,0,37,
+  	38,5,53,0,0,38,39,5,41,0,0,39,40,3,12,6,0,40,41,5,1,0,0,41,43,1,0,0,0,
+  	42,26,1,0,0,0,42,29,1,0,0,0,42,35,1,0,0,0,43,3,1,0,0,0,44,45,6,2,-1,0,
+  	45,46,5,36,0,0,46,74,3,4,2,11,47,48,5,42,0,0,48,49,3,4,2,0,49,50,5,43,
+  	0,0,50,74,1,0,0,0,51,74,3,16,8,0,52,74,5,56,0,0,53,74,5,53,0,0,54,55,
+  	5,53,0,0,55,56,5,46,0,0,56,57,3,4,2,0,57,58,5,47,0,0,58,74,1,0,0,0,59,
+  	60,3,6,3,0,60,62,5,42,0,0,61,63,3,10,5,0,62,61,1,0,0,0,62,63,1,0,0,0,
+  	63,64,1,0,0,0,64,65,5,43,0,0,65,74,1,0,0,0,66,67,3,8,4,0,67,69,5,42,0,
+  	0,68,70,3,10,5,0,69,68,1,0,0,0,69,70,1,0,0,0,70,71,1,0,0,0,71,72,5,43,
+  	0,0,72,74,1,0,0,0,73,44,1,0,0,0,73,47,1,0,0,0,73,51,1,0,0,0,73,52,1,0,
+  	0,0,73,53,1,0,0,0,73,54,1,0,0,0,73,59,1,0,0,0,73,66,1,0,0,0,74,86,1,0,
+  	0,0,75,76,10,10,0,0,76,77,5,34,0,0,77,85,3,4,2,11,78,79,10,9,0,0,79,80,
+  	7,0,0,0,80,85,3,4,2,10,81,82,10,8,0,0,82,83,7,1,0,0,83,85,3,4,2,9,84,
+  	75,1,0,0,0,84,78,1,0,0,0,84,81,1,0,0,0,85,88,1,0,0,0,86,84,1,0,0,0,86,
+  	87,1,0,0,0,87,5,1,0,0,0,88,86,1,0,0,0,89,90,7,2,0,0,90,7,1,0,0,0,91,92,
+  	7,3,0,0,92,9,1,0,0,0,93,98,3,4,2,0,94,95,5,48,0,0,95,97,3,4,2,0,96,94,
+  	1,0,0,0,97,100,1,0,0,0,98,96,1,0,0,0,98,99,1,0,0,0,99,11,1,0,0,0,100,
+  	98,1,0,0,0,101,103,5,44,0,0,102,104,3,14,7,0,103,102,1,0,0,0,103,104,
+  	1,0,0,0,104,105,1,0,0,0,105,106,5,45,0,0,106,13,1,0,0,0,107,112,3,16,
+  	8,0,108,109,5,48,0,0,109,111,3,16,8,0,110,108,1,0,0,0,111,114,1,0,0,0,
+  	112,110,1,0,0,0,112,113,1,0,0,0,113,15,1,0,0,0,114,112,1,0,0,0,115,116,
+  	7,4,0,0,116,17,1,0,0,0,117,118,7,5,0,0,118,19,1,0,0,0,10,23,42,62,69,
+  	73,84,86,98,103,112
   };
   staticData->serializedATN = antlr4::atn::SerializedATNView(serializedATNSegment, sizeof(serializedATNSegment) / sizeof(serializedATNSegment[0]));
 
@@ -195,14 +200,14 @@ StatCompParser::ProgContext* StatCompParser::prog() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(25);
+    setState(23);
     _errHandler->sync(this);
     _la = _input->LA(1);
     while ((((_la & ~ 0x3fULL) == 0) &&
-      ((1ULL << _la) & 33825005564) != 0)) {
-      setState(22);
+      ((1ULL << _la) & 143556722068291580) != 0)) {
+      setState(20);
       stmt();
-      setState(27);
+      setState(25);
       _errHandler->sync(this);
       _la = _input->LA(1);
     }
@@ -317,7 +322,7 @@ StatCompParser::StmtContext* StatCompParser::stmt() {
     exitRule();
   });
   try {
-    setState(44);
+    setState(42);
     _errHandler->sync(this);
     switch (_input->LA(1)) {
       case StatCompParser::T__1:
@@ -331,33 +336,56 @@ StatCompParser::StmtContext* StatCompParser::stmt() {
       case StatCompParser::T__9:
       case StatCompParser::T__10:
       case StatCompParser::T__11:
+      case StatCompParser::T__12:
+      case StatCompParser::T__13:
+      case StatCompParser::T__14:
+      case StatCompParser::T__15:
+      case StatCompParser::T__16:
+      case StatCompParser::T__17:
+      case StatCompParser::T__18:
+      case StatCompParser::T__19:
+      case StatCompParser::T__20:
+      case StatCompParser::T__21:
+      case StatCompParser::T__22:
+      case StatCompParser::T__23:
+      case StatCompParser::T__24:
+      case StatCompParser::T__25:
+      case StatCompParser::T__26:
+      case StatCompParser::T__27:
+      case StatCompParser::T__28:
+      case StatCompParser::T__29:
+      case StatCompParser::T__30:
+      case StatCompParser::T__31:
+      case StatCompParser::T__32:
       case StatCompParser::SUB:
       case StatCompParser::LPAR:
       case StatCompParser::ID:
       case StatCompParser::INT:
-      case StatCompParser::FLOAT: {
+      case StatCompParser::FLOAT:
+      case StatCompParser::STRING: {
         _localctx = _tracker.createInstance<StatCompParser::PrintExprContext>(_localctx);
         enterOuterAlt(_localctx, 1);
-        setState(28);
+        setState(26);
         expr(0);
-        setState(29);
+        setState(27);
         match(StatCompParser::T__0);
         break;
       }
 
       case StatCompParser::TINT:
-      case StatCompParser::TFLOAT: {
+      case StatCompParser::TFLOAT:
+      case StatCompParser::TSTRING: {
         _localctx = _tracker.createInstance<StatCompParser::UpdateSymbolContext>(_localctx);
         enterOuterAlt(_localctx, 2);
-        setState(31);
+        setState(29);
         decltype_();
-        setState(32);
+        setState(30);
         match(StatCompParser::ID);
-        setState(33);
+        setState(31);
         match(StatCompParser::ASSIGN);
-        setState(34);
+        setState(32);
         expr(0);
-        setState(35);
+        setState(33);
         match(StatCompParser::T__0);
         break;
       }
@@ -365,17 +393,17 @@ StatCompParser::StmtContext* StatCompParser::stmt() {
       case StatCompParser::ARRAY: {
         _localctx = _tracker.createInstance<StatCompParser::ArrayDeclContext>(_localctx);
         enterOuterAlt(_localctx, 3);
-        setState(37);
+        setState(35);
         match(StatCompParser::ARRAY);
-        setState(38);
+        setState(36);
         decltype_();
-        setState(39);
+        setState(37);
         match(StatCompParser::ID);
-        setState(40);
+        setState(38);
         match(StatCompParser::ASSIGN);
-        setState(41);
+        setState(39);
         arrayInit();
-        setState(42);
+        setState(40);
         match(StatCompParser::T__0);
         break;
       }
@@ -438,12 +466,12 @@ tree::TerminalNode* StatCompParser::ExprTableFuncContext::LPAR() {
   return getToken(StatCompParser::LPAR, 0);
 }
 
-StatCompParser::ExprContext* StatCompParser::ExprTableFuncContext::expr() {
-  return getRuleContext<StatCompParser::ExprContext>(0);
-}
-
 tree::TerminalNode* StatCompParser::ExprTableFuncContext::RPAR() {
   return getToken(StatCompParser::RPAR, 0);
+}
+
+StatCompParser::ArglistContext* StatCompParser::ExprTableFuncContext::arglist() {
+  return getRuleContext<StatCompParser::ArglistContext>(0);
 }
 
 StatCompParser::ExprTableFuncContext::ExprTableFuncContext(ExprContext *ctx) { copyFrom(ctx); }
@@ -502,6 +530,21 @@ StatCompParser::ExprAddSubContext::ExprAddSubContext(ExprContext *ctx) { copyFro
 std::any StatCompParser::ExprAddSubContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<StatCompVisitor*>(visitor))
     return parserVisitor->visitExprAddSub(this);
+  else
+    return visitor->visitChildren(this);
+}
+//----------------- ExprStringContext ------------------------------------------------------------------
+
+tree::TerminalNode* StatCompParser::ExprStringContext::STRING() {
+  return getToken(StatCompParser::STRING, 0);
+}
+
+StatCompParser::ExprStringContext::ExprStringContext(ExprContext *ctx) { copyFrom(ctx); }
+
+
+std::any StatCompParser::ExprStringContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<StatCompVisitor*>(visitor))
+    return parserVisitor->visitExprString(this);
   else
     return visitor->visitChildren(this);
 }
@@ -568,8 +611,8 @@ tree::TerminalNode* StatCompParser::ExprArrayAccessContext::LBRACK() {
   return getToken(StatCompParser::LBRACK, 0);
 }
 
-StatCompParser::PosContext* StatCompParser::ExprArrayAccessContext::pos() {
-  return getRuleContext<StatCompParser::PosContext>(0);
+StatCompParser::ExprContext* StatCompParser::ExprArrayAccessContext::expr() {
+  return getRuleContext<StatCompParser::ExprContext>(0);
 }
 
 tree::TerminalNode* StatCompParser::ExprArrayAccessContext::RBRACK() {
@@ -630,12 +673,12 @@ tree::TerminalNode* StatCompParser::ExprStatFuncContext::LPAR() {
   return getToken(StatCompParser::LPAR, 0);
 }
 
-StatCompParser::ExprContext* StatCompParser::ExprStatFuncContext::expr() {
-  return getRuleContext<StatCompParser::ExprContext>(0);
-}
-
 tree::TerminalNode* StatCompParser::ExprStatFuncContext::RPAR() {
   return getToken(StatCompParser::RPAR, 0);
+}
+
+StatCompParser::ArglistContext* StatCompParser::ExprStatFuncContext::arglist() {
+  return getRuleContext<StatCompParser::ArglistContext>(0);
 }
 
 StatCompParser::ExprStatFuncContext::ExprStatFuncContext(ExprContext *ctx) { copyFrom(ctx); }
@@ -673,18 +716,18 @@ StatCompParser::ExprContext* StatCompParser::expr(int precedence) {
   try {
     size_t alt;
     enterOuterAlt(_localctx, 1);
-    setState(70);
+    setState(73);
     _errHandler->sync(this);
-    switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 2, _ctx)) {
+    switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 4, _ctx)) {
     case 1: {
       _localctx = _tracker.createInstance<ExprNegContext>(_localctx);
       _ctx = _localctx;
       previousContext = _localctx;
 
-      setState(47);
+      setState(45);
       match(StatCompParser::SUB);
-      setState(48);
-      expr(10);
+      setState(46);
+      expr(11);
       break;
     }
 
@@ -692,11 +735,11 @@ StatCompParser::ExprContext* StatCompParser::expr(int precedence) {
       _localctx = _tracker.createInstance<ExprParContext>(_localctx);
       _ctx = _localctx;
       previousContext = _localctx;
-      setState(49);
+      setState(47);
       match(StatCompParser::LPAR);
-      setState(50);
+      setState(48);
       expr(0);
-      setState(51);
+      setState(49);
       match(StatCompParser::RPAR);
       break;
     }
@@ -705,61 +748,84 @@ StatCompParser::ExprContext* StatCompParser::expr(int precedence) {
       _localctx = _tracker.createInstance<ExprLiteralContext>(_localctx);
       _ctx = _localctx;
       previousContext = _localctx;
-      setState(53);
+      setState(51);
       num();
       break;
     }
 
     case 4: {
-      _localctx = _tracker.createInstance<ExprVarContext>(_localctx);
+      _localctx = _tracker.createInstance<ExprStringContext>(_localctx);
       _ctx = _localctx;
       previousContext = _localctx;
-      setState(54);
-      match(StatCompParser::ID);
+      setState(52);
+      match(StatCompParser::STRING);
       break;
     }
 
     case 5: {
-      _localctx = _tracker.createInstance<ExprArrayAccessContext>(_localctx);
+      _localctx = _tracker.createInstance<ExprVarContext>(_localctx);
       _ctx = _localctx;
       previousContext = _localctx;
-      setState(55);
+      setState(53);
       match(StatCompParser::ID);
-      setState(56);
-      match(StatCompParser::LBRACK);
-      setState(57);
-      pos();
-      setState(58);
-      match(StatCompParser::RBRACK);
       break;
     }
 
     case 6: {
-      _localctx = _tracker.createInstance<ExprStatFuncContext>(_localctx);
+      _localctx = _tracker.createInstance<ExprArrayAccessContext>(_localctx);
       _ctx = _localctx;
       previousContext = _localctx;
-      setState(60);
-      statFunc();
-      setState(61);
-      match(StatCompParser::LPAR);
-      setState(62);
+      setState(54);
+      match(StatCompParser::ID);
+      setState(55);
+      match(StatCompParser::LBRACK);
+      setState(56);
       expr(0);
-      setState(63);
-      match(StatCompParser::RPAR);
+      setState(57);
+      match(StatCompParser::RBRACK);
       break;
     }
 
     case 7: {
+      _localctx = _tracker.createInstance<ExprStatFuncContext>(_localctx);
+      _ctx = _localctx;
+      previousContext = _localctx;
+      setState(59);
+      statFunc();
+      setState(60);
+      match(StatCompParser::LPAR);
+      setState(62);
+      _errHandler->sync(this);
+
+      _la = _input->LA(1);
+      if ((((_la & ~ 0x3fULL) == 0) &&
+        ((1ULL << _la) & 135112472766971900) != 0)) {
+        setState(61);
+        arglist();
+      }
+      setState(64);
+      match(StatCompParser::RPAR);
+      break;
+    }
+
+    case 8: {
       _localctx = _tracker.createInstance<ExprTableFuncContext>(_localctx);
       _ctx = _localctx;
       previousContext = _localctx;
-      setState(65);
-      tableFunc();
       setState(66);
-      match(StatCompParser::LPAR);
+      tableFunc();
       setState(67);
-      expr(0);
-      setState(68);
+      match(StatCompParser::LPAR);
+      setState(69);
+      _errHandler->sync(this);
+
+      _la = _input->LA(1);
+      if ((((_la & ~ 0x3fULL) == 0) &&
+        ((1ULL << _la) & 135112472766971900) != 0)) {
+        setState(68);
+        arglist();
+      }
+      setState(71);
       match(StatCompParser::RPAR);
       break;
     }
@@ -768,28 +834,28 @@ StatCompParser::ExprContext* StatCompParser::expr(int precedence) {
       break;
     }
     _ctx->stop = _input->LT(-1);
-    setState(83);
+    setState(86);
     _errHandler->sync(this);
-    alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 4, _ctx);
+    alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 6, _ctx);
     while (alt != 2 && alt != atn::ATN::INVALID_ALT_NUMBER) {
       if (alt == 1) {
         if (!_parseListeners.empty())
           triggerExitRuleEvent();
         previousContext = _localctx;
-        setState(81);
+        setState(84);
         _errHandler->sync(this);
-        switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 3, _ctx)) {
+        switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 5, _ctx)) {
         case 1: {
           auto newContext = _tracker.createInstance<ExprPowContext>(_tracker.createInstance<ExprContext>(parentContext, parentState));
           _localctx = newContext;
           pushNewRecursionContext(newContext, startState, RuleExpr);
-          setState(72);
+          setState(75);
 
-          if (!(precpred(_ctx, 9))) throw FailedPredicateException(this, "precpred(_ctx, 9)");
-          setState(73);
+          if (!(precpred(_ctx, 10))) throw FailedPredicateException(this, "precpred(_ctx, 10)");
+          setState(76);
           match(StatCompParser::POW);
-          setState(74);
-          expr(10);
+          setState(77);
+          expr(11);
           break;
         }
 
@@ -797,21 +863,21 @@ StatCompParser::ExprContext* StatCompParser::expr(int precedence) {
           auto newContext = _tracker.createInstance<ExprMulDivContext>(_tracker.createInstance<ExprContext>(parentContext, parentState));
           _localctx = newContext;
           pushNewRecursionContext(newContext, startState, RuleExpr);
-          setState(75);
+          setState(78);
 
-          if (!(precpred(_ctx, 8))) throw FailedPredicateException(this, "precpred(_ctx, 8)");
-          setState(76);
+          if (!(precpred(_ctx, 9))) throw FailedPredicateException(this, "precpred(_ctx, 9)");
+          setState(79);
           _la = _input->LA(1);
           if (!((((_la & ~ 0x3fULL) == 0) &&
-            ((1ULL << _la) & 983040) != 0))) {
+            ((1ULL << _la) & 2061584302080) != 0))) {
           _errHandler->recoverInline(this);
           }
           else {
             _errHandler->reportMatch(this);
             consume();
           }
-          setState(77);
-          expr(9);
+          setState(80);
+          expr(10);
           break;
         }
 
@@ -819,10 +885,10 @@ StatCompParser::ExprContext* StatCompParser::expr(int precedence) {
           auto newContext = _tracker.createInstance<ExprAddSubContext>(_tracker.createInstance<ExprContext>(parentContext, parentState));
           _localctx = newContext;
           pushNewRecursionContext(newContext, startState, RuleExpr);
-          setState(78);
+          setState(81);
 
-          if (!(precpred(_ctx, 7))) throw FailedPredicateException(this, "precpred(_ctx, 7)");
-          setState(79);
+          if (!(precpred(_ctx, 8))) throw FailedPredicateException(this, "precpred(_ctx, 8)");
+          setState(82);
           _la = _input->LA(1);
           if (!(_la == StatCompParser::ADD
 
@@ -833,8 +899,8 @@ StatCompParser::ExprContext* StatCompParser::expr(int precedence) {
             _errHandler->reportMatch(this);
             consume();
           }
-          setState(80);
-          expr(8);
+          setState(83);
+          expr(9);
           break;
         }
 
@@ -842,9 +908,9 @@ StatCompParser::ExprContext* StatCompParser::expr(int precedence) {
           break;
         } 
       }
-      setState(85);
+      setState(88);
       _errHandler->sync(this);
-      alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 4, _ctx);
+      alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 6, _ctx);
     }
   }
   catch (RecognitionException &e) {
@@ -888,10 +954,10 @@ StatCompParser::StatFuncContext* StatCompParser::statFunc() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(86);
+    setState(89);
     _la = _input->LA(1);
     if (!((((_la & ~ 0x3fULL) == 0) &&
-      ((1ULL << _la) & 252) != 0))) {
+      ((1ULL << _la) & 268435452) != 0))) {
     _errHandler->recoverInline(this);
     }
     else {
@@ -942,15 +1008,89 @@ StatCompParser::TableFuncContext* StatCompParser::tableFunc() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(88);
+    setState(91);
     _la = _input->LA(1);
     if (!((((_la & ~ 0x3fULL) == 0) &&
-      ((1ULL << _la) & 7936) != 0))) {
+      ((1ULL << _la) & 16911433728) != 0))) {
     _errHandler->recoverInline(this);
     }
     else {
       _errHandler->reportMatch(this);
       consume();
+    }
+   
+  }
+  catch (RecognitionException &e) {
+    _errHandler->reportError(this, e);
+    _localctx->exception = std::current_exception();
+    _errHandler->recover(this, _localctx->exception);
+  }
+
+  return _localctx;
+}
+
+//----------------- ArglistContext ------------------------------------------------------------------
+
+StatCompParser::ArglistContext::ArglistContext(ParserRuleContext *parent, size_t invokingState)
+  : ParserRuleContext(parent, invokingState) {
+}
+
+std::vector<StatCompParser::ExprContext *> StatCompParser::ArglistContext::expr() {
+  return getRuleContexts<StatCompParser::ExprContext>();
+}
+
+StatCompParser::ExprContext* StatCompParser::ArglistContext::expr(size_t i) {
+  return getRuleContext<StatCompParser::ExprContext>(i);
+}
+
+std::vector<tree::TerminalNode *> StatCompParser::ArglistContext::COMMA() {
+  return getTokens(StatCompParser::COMMA);
+}
+
+tree::TerminalNode* StatCompParser::ArglistContext::COMMA(size_t i) {
+  return getToken(StatCompParser::COMMA, i);
+}
+
+
+size_t StatCompParser::ArglistContext::getRuleIndex() const {
+  return StatCompParser::RuleArglist;
+}
+
+
+std::any StatCompParser::ArglistContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<StatCompVisitor*>(visitor))
+    return parserVisitor->visitArglist(this);
+  else
+    return visitor->visitChildren(this);
+}
+
+StatCompParser::ArglistContext* StatCompParser::arglist() {
+  ArglistContext *_localctx = _tracker.createInstance<ArglistContext>(_ctx, getState());
+  enterRule(_localctx, 10, StatCompParser::RuleArglist);
+  size_t _la = 0;
+
+#if __cplusplus > 201703L
+  auto onExit = finally([=, this] {
+#else
+  auto onExit = finally([=] {
+#endif
+    exitRule();
+  });
+  try {
+    enterOuterAlt(_localctx, 1);
+    setState(93);
+    expr(0);
+    setState(98);
+    _errHandler->sync(this);
+    _la = _input->LA(1);
+    while (_la == StatCompParser::COMMA) {
+      setState(94);
+      match(StatCompParser::COMMA);
+      setState(95);
+      expr(0);
+      setState(100);
+      _errHandler->sync(this);
+      _la = _input->LA(1);
     }
    
   }
@@ -996,7 +1136,7 @@ std::any StatCompParser::ArrayInitContext::accept(tree::ParseTreeVisitor *visito
 
 StatCompParser::ArrayInitContext* StatCompParser::arrayInit() {
   ArrayInitContext *_localctx = _tracker.createInstance<ArrayInitContext>(_ctx, getState());
-  enterRule(_localctx, 10, StatCompParser::RuleArrayInit);
+  enterRule(_localctx, 12, StatCompParser::RuleArrayInit);
   size_t _la = 0;
 
 #if __cplusplus > 201703L
@@ -1008,19 +1148,19 @@ StatCompParser::ArrayInitContext* StatCompParser::arrayInit() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(90);
+    setState(101);
     match(StatCompParser::LBRACE);
-    setState(92);
+    setState(103);
     _errHandler->sync(this);
 
     _la = _input->LA(1);
     if (_la == StatCompParser::INT
 
     || _la == StatCompParser::FLOAT) {
-      setState(91);
+      setState(102);
       numlist();
     }
-    setState(94);
+    setState(105);
     match(StatCompParser::RBRACE);
    
   }
@@ -1070,7 +1210,7 @@ std::any StatCompParser::NumlistContext::accept(tree::ParseTreeVisitor *visitor)
 
 StatCompParser::NumlistContext* StatCompParser::numlist() {
   NumlistContext *_localctx = _tracker.createInstance<NumlistContext>(_ctx, getState());
-  enterRule(_localctx, 12, StatCompParser::RuleNumlist);
+  enterRule(_localctx, 14, StatCompParser::RuleNumlist);
   size_t _la = 0;
 
 #if __cplusplus > 201703L
@@ -1082,114 +1222,20 @@ StatCompParser::NumlistContext* StatCompParser::numlist() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(96);
+    setState(107);
     num();
-    setState(101);
+    setState(112);
     _errHandler->sync(this);
     _la = _input->LA(1);
     while (_la == StatCompParser::COMMA) {
-      setState(97);
+      setState(108);
       match(StatCompParser::COMMA);
-      setState(98);
+      setState(109);
       num();
-      setState(103);
+      setState(114);
       _errHandler->sync(this);
       _la = _input->LA(1);
     }
-   
-  }
-  catch (RecognitionException &e) {
-    _errHandler->reportError(this, e);
-    _localctx->exception = std::current_exception();
-    _errHandler->recover(this, _localctx->exception);
-  }
-
-  return _localctx;
-}
-
-//----------------- RowContext ------------------------------------------------------------------
-
-StatCompParser::RowContext::RowContext(ParserRuleContext *parent, size_t invokingState)
-  : ParserRuleContext(parent, invokingState) {
-}
-
-tree::TerminalNode* StatCompParser::RowContext::LBRACE() {
-  return getToken(StatCompParser::LBRACE, 0);
-}
-
-tree::TerminalNode* StatCompParser::RowContext::RBRACE() {
-  return getToken(StatCompParser::RBRACE, 0);
-}
-
-std::vector<StatCompParser::NumContext *> StatCompParser::RowContext::num() {
-  return getRuleContexts<StatCompParser::NumContext>();
-}
-
-StatCompParser::NumContext* StatCompParser::RowContext::num(size_t i) {
-  return getRuleContext<StatCompParser::NumContext>(i);
-}
-
-std::vector<tree::TerminalNode *> StatCompParser::RowContext::COMMA() {
-  return getTokens(StatCompParser::COMMA);
-}
-
-tree::TerminalNode* StatCompParser::RowContext::COMMA(size_t i) {
-  return getToken(StatCompParser::COMMA, i);
-}
-
-
-size_t StatCompParser::RowContext::getRuleIndex() const {
-  return StatCompParser::RuleRow;
-}
-
-
-std::any StatCompParser::RowContext::accept(tree::ParseTreeVisitor *visitor) {
-  if (auto parserVisitor = dynamic_cast<StatCompVisitor*>(visitor))
-    return parserVisitor->visitRow(this);
-  else
-    return visitor->visitChildren(this);
-}
-
-StatCompParser::RowContext* StatCompParser::row() {
-  RowContext *_localctx = _tracker.createInstance<RowContext>(_ctx, getState());
-  enterRule(_localctx, 14, StatCompParser::RuleRow);
-  size_t _la = 0;
-
-#if __cplusplus > 201703L
-  auto onExit = finally([=, this] {
-#else
-  auto onExit = finally([=] {
-#endif
-    exitRule();
-  });
-  try {
-    enterOuterAlt(_localctx, 1);
-    setState(104);
-    match(StatCompParser::LBRACE);
-    setState(113);
-    _errHandler->sync(this);
-
-    _la = _input->LA(1);
-    if (_la == StatCompParser::INT
-
-    || _la == StatCompParser::FLOAT) {
-      setState(105);
-      num();
-      setState(110);
-      _errHandler->sync(this);
-      _la = _input->LA(1);
-      while (_la == StatCompParser::COMMA) {
-        setState(106);
-        match(StatCompParser::COMMA);
-        setState(107);
-        num();
-        setState(112);
-        _errHandler->sync(this);
-        _la = _input->LA(1);
-      }
-    }
-    setState(115);
-    match(StatCompParser::RBRACE);
    
   }
   catch (RecognitionException &e) {
@@ -1242,7 +1288,7 @@ StatCompParser::NumContext* StatCompParser::num() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(117);
+    setState(115);
     _la = _input->LA(1);
     if (!(_la == StatCompParser::INT
 
@@ -1278,6 +1324,10 @@ tree::TerminalNode* StatCompParser::DecltypeContext::TFLOAT() {
   return getToken(StatCompParser::TFLOAT, 0);
 }
 
+tree::TerminalNode* StatCompParser::DecltypeContext::TSTRING() {
+  return getToken(StatCompParser::TSTRING, 0);
+}
+
 
 size_t StatCompParser::DecltypeContext::getRuleIndex() const {
   return StatCompParser::RuleDecltype;
@@ -1305,66 +1355,16 @@ StatCompParser::DecltypeContext* StatCompParser::decltype_() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(119);
+    setState(117);
     _la = _input->LA(1);
-    if (!(_la == StatCompParser::TINT
-
-    || _la == StatCompParser::TFLOAT)) {
+    if (!((((_la & ~ 0x3fULL) == 0) &&
+      ((1ULL << _la) & 3940649673949184) != 0))) {
     _errHandler->recoverInline(this);
     }
     else {
       _errHandler->reportMatch(this);
       consume();
     }
-   
-  }
-  catch (RecognitionException &e) {
-    _errHandler->reportError(this, e);
-    _localctx->exception = std::current_exception();
-    _errHandler->recover(this, _localctx->exception);
-  }
-
-  return _localctx;
-}
-
-//----------------- PosContext ------------------------------------------------------------------
-
-StatCompParser::PosContext::PosContext(ParserRuleContext *parent, size_t invokingState)
-  : ParserRuleContext(parent, invokingState) {
-}
-
-tree::TerminalNode* StatCompParser::PosContext::INT() {
-  return getToken(StatCompParser::INT, 0);
-}
-
-
-size_t StatCompParser::PosContext::getRuleIndex() const {
-  return StatCompParser::RulePos;
-}
-
-
-std::any StatCompParser::PosContext::accept(tree::ParseTreeVisitor *visitor) {
-  if (auto parserVisitor = dynamic_cast<StatCompVisitor*>(visitor))
-    return parserVisitor->visitPos(this);
-  else
-    return visitor->visitChildren(this);
-}
-
-StatCompParser::PosContext* StatCompParser::pos() {
-  PosContext *_localctx = _tracker.createInstance<PosContext>(_ctx, getState());
-  enterRule(_localctx, 20, StatCompParser::RulePos);
-
-#if __cplusplus > 201703L
-  auto onExit = finally([=, this] {
-#else
-  auto onExit = finally([=] {
-#endif
-    exitRule();
-  });
-  try {
-    enterOuterAlt(_localctx, 1);
-    setState(121);
-    match(StatCompParser::INT);
    
   }
   catch (RecognitionException &e) {
@@ -1388,9 +1388,9 @@ bool StatCompParser::sempred(RuleContext *context, size_t ruleIndex, size_t pred
 
 bool StatCompParser::exprSempred(ExprContext *_localctx, size_t predicateIndex) {
   switch (predicateIndex) {
-    case 0: return precpred(_ctx, 9);
-    case 1: return precpred(_ctx, 8);
-    case 2: return precpred(_ctx, 7);
+    case 0: return precpred(_ctx, 10);
+    case 1: return precpred(_ctx, 9);
+    case 2: return precpred(_ctx, 8);
 
   default:
     break;

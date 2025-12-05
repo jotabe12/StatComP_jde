@@ -1,32 +1,32 @@
 [
 {
-  "directory": "/home/mayta/Desktop/CompilersTheory/StatComP/build",
-  "command": "/usr/bin/c++ -I/home/mayta/Apps/antlr4/runtime/Cpp/run/usr/local/include/antlr4-runtime -I/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -std=gnu++20 -fmodules-ts -fmodule-mapper=CMakeFiles/StatComp.dir/main.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/StatComp.dir/main.cpp.o -c /home/mayta/Desktop/CompilersTheory/StatComP/main.cpp",
-  "file": "/home/mayta/Desktop/CompilersTheory/StatComP/main.cpp",
-  "output": "CMakeFiles/StatComp.dir/main.cpp.o"
+  "directory": "/home/mayta/projects/CompilersTheory/StatComP/build",
+  "command": "/usr/sbin/c++  -I/usr/include/antlr4-runtime -I/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -g -std=gnu++20   -D_GNU_SOURCE -DEXPERIMENTAL_KEY_INSTRUCTIONS -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/Calc.dir/main.cpp.o -c /home/mayta/projects/CompilersTheory/StatComP/src/main.cpp",
+  "file": "/home/mayta/projects/CompilersTheory/StatComP/src/main.cpp",
+  "output": "CMakeFiles/Calc.dir/main.cpp.o"
 },
 {
-  "directory": "/home/mayta/Desktop/CompilersTheory/StatComP/build",
-  "command": "/usr/bin/c++ -I/home/mayta/Apps/antlr4/runtime/Cpp/run/usr/local/include/antlr4-runtime -I/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -std=gnu++20 -fmodules-ts -fmodule-mapper=CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp.o -c /home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp",
-  "file": "/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp",
-  "output": "CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp.o"
+  "directory": "/home/mayta/projects/CompilersTheory/StatComP/build",
+  "command": "/usr/sbin/c++  -I/usr/include/antlr4-runtime -I/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -g -std=gnu++20   -D_GNU_SOURCE -DEXPERIMENTAL_KEY_INSTRUCTIONS -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/Calc.dir/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp.o -c /home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp",
+  "file": "/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp",
+  "output": "CMakeFiles/Calc.dir/antlr4cpp_generated_src/StatComp/StatCompLexer.cpp.o"
 },
 {
-  "directory": "/home/mayta/Desktop/CompilersTheory/StatComP/build",
-  "command": "/usr/bin/c++ -I/home/mayta/Apps/antlr4/runtime/Cpp/run/usr/local/include/antlr4-runtime -I/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -std=gnu++20 -fmodules-ts -fmodule-mapper=CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompParser.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompParser.cpp.o -c /home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompParser.cpp",
-  "file": "/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompParser.cpp",
-  "output": "CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompParser.cpp.o"
+  "directory": "/home/mayta/projects/CompilersTheory/StatComP/build",
+  "command": "/usr/sbin/c++  -I/usr/include/antlr4-runtime -I/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -g -std=gnu++20   -D_GNU_SOURCE -DEXPERIMENTAL_KEY_INSTRUCTIONS -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/Calc.dir/antlr4cpp_generated_src/StatComp/StatCompParser.cpp.o -c /home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompParser.cpp",
+  "file": "/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompParser.cpp",
+  "output": "CMakeFiles/Calc.dir/antlr4cpp_generated_src/StatComp/StatCompParser.cpp.o"
 },
 {
-  "directory": "/home/mayta/Desktop/CompilersTheory/StatComP/build",
-  "command": "/usr/bin/c++ -I/home/mayta/Apps/antlr4/runtime/Cpp/run/usr/local/include/antlr4-runtime -I/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -std=gnu++20 -fmodules-ts -fmodule-mapper=CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp.o -c /home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp",
-  "file": "/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp",
-  "output": "CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp.o"
+  "directory": "/home/mayta/projects/CompilersTheory/StatComP/build",
+  "command": "/usr/sbin/c++  -I/usr/include/antlr4-runtime -I/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -g -std=gnu++20   -D_GNU_SOURCE -DEXPERIMENTAL_KEY_INSTRUCTIONS -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/Calc.dir/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp.o -c /home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp",
+  "file": "/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp",
+  "output": "CMakeFiles/Calc.dir/antlr4cpp_generated_src/StatComp/StatCompBaseVisitor.cpp.o"
 },
 {
-  "directory": "/home/mayta/Desktop/CompilersTheory/StatComP/build",
-  "command": "/usr/bin/c++ -I/home/mayta/Apps/antlr4/runtime/Cpp/run/usr/local/include/antlr4-runtime -I/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -std=gnu++20 -fmodules-ts -fmodule-mapper=CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp.o -c /home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp",
-  "file": "/home/mayta/Desktop/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp",
-  "output": "CMakeFiles/StatComp.dir/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp.o"
+  "directory": "/home/mayta/projects/CompilersTheory/StatComP/build",
+  "command": "/usr/sbin/c++  -I/usr/include/antlr4-runtime -I/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp -g -std=gnu++20   -D_GNU_SOURCE -DEXPERIMENTAL_KEY_INSTRUCTIONS -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/Calc.dir/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp.o -c /home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp",
+  "file": "/home/mayta/projects/CompilersTheory/StatComP/build/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp",
+  "output": "CMakeFiles/Calc.dir/antlr4cpp_generated_src/StatComp/StatCompVisitor.cpp.o"
 }
 ]

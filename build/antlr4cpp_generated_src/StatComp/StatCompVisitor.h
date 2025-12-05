@@ -1,5 +1,5 @@
 
-// Generated from /home/mayta/Desktop/CompilersTheory/StatComP/StatComp.g4 by ANTLR 4.13.2
+// Generated from /home/mayta/projects/CompilersTheory/StatComP/src/StatComp.g4 by ANTLR 4.13.2
 
 #pragma once
 
@@ -35,6 +35,8 @@ public:
 
     virtual std::any visitExprAddSub(StatCompParser::ExprAddSubContext *context) = 0;
 
+    virtual std::any visitExprString(StatCompParser::ExprStringContext *context) = 0;
+
     virtual std::any visitExprVar(StatCompParser::ExprVarContext *context) = 0;
 
     virtual std::any visitExprPow(StatCompParser::ExprPowContext *context) = 0;
@@ -51,17 +53,15 @@ public:
 
     virtual std::any visitTableFunc(StatCompParser::TableFuncContext *context) = 0;
 
+    virtual std::any visitArglist(StatCompParser::ArglistContext *context) = 0;
+
     virtual std::any visitArrayInit(StatCompParser::ArrayInitContext *context) = 0;
 
     virtual std::any visitNumlist(StatCompParser::NumlistContext *context) = 0;
 
-    virtual std::any visitRow(StatCompParser::RowContext *context) = 0;
-
     virtual std::any visitNum(StatCompParser::NumContext *context) = 0;
 
     virtual std::any visitDecltype(StatCompParser::DecltypeContext *context) = 0;
-
-    virtual std::any visitPos(StatCompParser::PosContext *context) = 0;
 
 
 };
