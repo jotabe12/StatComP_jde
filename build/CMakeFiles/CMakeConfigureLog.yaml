@@ -30,6 +30,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -63,6 +65,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -89,11 +93,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Path to a program."
+    description: "Program used to build from build.ninja files."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -103,9 +107,9 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gmake"
-      - "make"
-      - "smake"
+      - "ninja-build"
+      - "ninja"
+      - "samu"
     candidate_directories:
       - "/home/mayta/miniconda3/condabin/"
       - "/usr/local/sbin/"
@@ -117,6 +121,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -134,36 +140,17 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
     searched_directories:
-      - "/home/mayta/miniconda3/condabin/gmake"
-      - "/usr/local/sbin/gmake"
-      - "/usr/local/bin/gmake"
-      - "/usr/sbin/gmake"
-      - "/usr/bin/gmake"
-      - "/sbin/gmake"
-      - "/bin/gmake"
-      - "/usr/games/gmake"
-      - "/usr/local/games/gmake"
-      - "/usr/lib/wsl/lib/gmake"
-      - "/mnt/c/Windows/system32/gmake"
-      - "/mnt/c/Windows/gmake"
-      - "/mnt/c/Windows/System32/Wbem/gmake"
-      - "/mnt/c/Windows/System32/WindowsPowerShell/v1.0/gmake"
-      - "/mnt/c/Windows/System32/OpenSSH/gmake"
-      - "/mnt/c/Program Files/Git/cmd/gmake"
-      - "/mnt/c/Program Files/Docker/Docker/resources/bin/gmake"
-      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/gmake"
-      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Local/Microsoft/WindowsApps/gmake"
-      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Local/Programs/Microsoft VS Code/bin/gmake"
-      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Local/Programs/Python/Python313/gmake"
-      - "/mnt/c/msys64/ucrt64/bin/gmake"
-      - "/usr/lib/jvm/default/bin/gmake"
-      - "/usr/bin/site_perl/gmake"
-      - "/usr/bin/vendor_perl/gmake"
-      - "/usr/bin/core_perl/gmake"
-      - "/home/mayta/miniconda3/condabin/make"
-      - "/usr/local/sbin/make"
-      - "/usr/local/bin/make"
-    found: "/usr/sbin/make"
+      - "/home/mayta/miniconda3/condabin/ninja-build"
+      - "/home/mayta/miniconda3/condabin/ninja"
+      - "/home/mayta/miniconda3/condabin/samu"
+      - "/usr/local/sbin/ninja-build"
+      - "/usr/local/sbin/ninja"
+      - "/usr/local/sbin/samu"
+      - "/usr/local/bin/ninja-build"
+      - "/usr/local/bin/ninja"
+      - "/usr/local/bin/samu"
+      - "/usr/sbin/ninja-build"
+    found: "/usr/sbin/ninja"
     search_context:
       ENV{PATH}:
         - "/home/mayta/miniconda3/condabin"
@@ -176,6 +163,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -228,6 +217,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -261,6 +252,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -314,6 +307,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -382,6 +377,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -411,6 +408,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -457,6 +456,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -486,6 +487,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -532,6 +535,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -561,6 +566,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -607,6 +614,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -636,6 +645,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -682,6 +693,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -711,6 +724,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -757,6 +772,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -786,6 +803,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -832,6 +851,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -861,6 +882,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -907,6 +930,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -936,6 +961,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -982,6 +1009,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -1009,6 +1038,8 @@ events:
       - "/usr/games/dlltool"
       - "/usr/local/games/dlltool"
       - "/usr/lib/wsl/lib/dlltool"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
       - "/mnt/c/Windows/system32/dlltool"
       - "/mnt/c/Windows/dlltool"
       - "/mnt/c/Windows/System32/Wbem/dlltool"
@@ -1038,6 +1069,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -1084,6 +1117,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -1113,6 +1148,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -1159,6 +1196,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -1186,6 +1225,8 @@ events:
       - "/usr/games/tapi"
       - "/usr/local/games/tapi"
       - "/usr/lib/wsl/lib/tapi"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "/mnt/c/Windows/system32/tapi"
       - "/mnt/c/Windows/tapi"
       - "/mnt/c/Windows/System32/Wbem/tapi"
@@ -1215,6 +1256,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -1264,6 +1307,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -1291,6 +1336,8 @@ events:
       - "/usr/games/gcc-ar-15.2"
       - "/usr/local/games/gcc-ar-15.2"
       - "/usr/lib/wsl/lib/gcc-ar-15.2"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
       - "/mnt/c/Windows/system32/gcc-ar-15.2"
       - "/mnt/c/Windows/gcc-ar-15.2"
       - "/mnt/c/Windows/System32/Wbem/gcc-ar-15.2"
@@ -1317,6 +1364,8 @@ events:
       - "/usr/games/gcc-ar-15"
       - "/usr/local/games/gcc-ar-15"
       - "/usr/lib/wsl/lib/gcc-ar-15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15"
       - "/mnt/c/Windows/system32/gcc-ar-15"
       - "/mnt/c/Windows/gcc-ar-15"
       - "/mnt/c/Windows/System32/Wbem/gcc-ar-15"
@@ -1343,6 +1392,8 @@ events:
       - "/usr/games/gcc-ar15"
       - "/usr/local/games/gcc-ar15"
       - "/usr/lib/wsl/lib/gcc-ar15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15"
       - "/mnt/c/Windows/system32/gcc-ar15"
       - "/mnt/c/Windows/gcc-ar15"
       - "/mnt/c/Windows/System32/Wbem/gcc-ar15"
@@ -1372,6 +1423,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -1421,6 +1474,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -1448,6 +1503,8 @@ events:
       - "/usr/games/gcc-ranlib-15.2"
       - "/usr/local/games/gcc-ranlib-15.2"
       - "/usr/lib/wsl/lib/gcc-ranlib-15.2"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
       - "/mnt/c/Windows/system32/gcc-ranlib-15.2"
       - "/mnt/c/Windows/gcc-ranlib-15.2"
       - "/mnt/c/Windows/System32/Wbem/gcc-ranlib-15.2"
@@ -1474,6 +1531,8 @@ events:
       - "/usr/games/gcc-ranlib-15"
       - "/usr/local/games/gcc-ranlib-15"
       - "/usr/lib/wsl/lib/gcc-ranlib-15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15"
       - "/mnt/c/Windows/system32/gcc-ranlib-15"
       - "/mnt/c/Windows/gcc-ranlib-15"
       - "/mnt/c/Windows/System32/Wbem/gcc-ranlib-15"
@@ -1500,6 +1559,8 @@ events:
       - "/usr/games/gcc-ranlib15"
       - "/usr/local/games/gcc-ranlib15"
       - "/usr/lib/wsl/lib/gcc-ranlib15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15"
       - "/mnt/c/Windows/system32/gcc-ranlib15"
       - "/mnt/c/Windows/gcc-ranlib15"
       - "/mnt/c/Windows/System32/Wbem/gcc-ranlib15"
@@ -1529,6 +1590,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -1588,6 +1651,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -1641,6 +1706,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -1712,6 +1779,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -1739,6 +1808,8 @@ events:
       - "/usr/games/gcc-ar-15.2"
       - "/usr/local/games/gcc-ar-15.2"
       - "/usr/lib/wsl/lib/gcc-ar-15.2"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
       - "/mnt/c/Windows/system32/gcc-ar-15.2"
       - "/mnt/c/Windows/gcc-ar-15.2"
       - "/mnt/c/Windows/System32/Wbem/gcc-ar-15.2"
@@ -1765,6 +1836,8 @@ events:
       - "/usr/games/gcc-ar-15"
       - "/usr/local/games/gcc-ar-15"
       - "/usr/lib/wsl/lib/gcc-ar-15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15"
       - "/mnt/c/Windows/system32/gcc-ar-15"
       - "/mnt/c/Windows/gcc-ar-15"
       - "/mnt/c/Windows/System32/Wbem/gcc-ar-15"
@@ -1791,6 +1864,8 @@ events:
       - "/usr/games/gcc-ar15"
       - "/usr/local/games/gcc-ar15"
       - "/usr/lib/wsl/lib/gcc-ar15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15"
       - "/mnt/c/Windows/system32/gcc-ar15"
       - "/mnt/c/Windows/gcc-ar15"
       - "/mnt/c/Windows/System32/Wbem/gcc-ar15"
@@ -1820,6 +1895,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -1869,6 +1946,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -1896,6 +1975,8 @@ events:
       - "/usr/games/gcc-ranlib-15.2"
       - "/usr/local/games/gcc-ranlib-15.2"
       - "/usr/lib/wsl/lib/gcc-ranlib-15.2"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
       - "/mnt/c/Windows/system32/gcc-ranlib-15.2"
       - "/mnt/c/Windows/gcc-ranlib-15.2"
       - "/mnt/c/Windows/System32/Wbem/gcc-ranlib-15.2"
@@ -1922,6 +2003,8 @@ events:
       - "/usr/games/gcc-ranlib-15"
       - "/usr/local/games/gcc-ranlib-15"
       - "/usr/lib/wsl/lib/gcc-ranlib-15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15"
       - "/mnt/c/Windows/system32/gcc-ranlib-15"
       - "/mnt/c/Windows/gcc-ranlib-15"
       - "/mnt/c/Windows/System32/Wbem/gcc-ranlib-15"
@@ -1948,6 +2031,8 @@ events:
       - "/usr/games/gcc-ranlib15"
       - "/usr/local/games/gcc-ranlib15"
       - "/usr/lib/wsl/lib/gcc-ranlib15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15"
       - "/mnt/c/Windows/system32/gcc-ranlib15"
       - "/mnt/c/Windows/gcc-ranlib15"
       - "/mnt/c/Windows/System32/Wbem/gcc-ranlib15"
@@ -1977,6 +2062,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -2002,8 +2089,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-IcXZcq"
-      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-IcXZcq"
+      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ZEkK3n"
+      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ZEkK3n"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -2012,13 +2099,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-IcXZcq'
+        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ZEkK3n'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_09254/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_09254.dir/build.make CMakeFiles/cmTC_09254.dir/build
-        make[1]: Entering directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-IcXZcq'
-        Building C object CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o
-        /usr/sbin/cc   -v -o CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/sbin/ninja -v cmTC_be565
+        [1/2] /usr/sbin/cc   -v -o CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/cc
         Target: x86_64-pc-linux-gnu
@@ -2026,8 +2110,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20251112 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09254.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_09254.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccNMeTgv.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be565.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_be565.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccPPnZ4L.s
         GNU C23 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20251112, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2041,14 +2125,13 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: e7e806b0d021308da32115a1780fef1e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09254.dir/'
-         as -v --64 -o CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o /tmp/ccNMeTgv.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be565.dir/'
+         as -v --64 -o CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o /tmp/ccPPnZ4L.s
         GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_09254
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_09254.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/sbin/cc  -v -Wl,-v CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o -o cmTC_be565   && :
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -2059,14 +2142,12 @@ events:
         gcc version 15.2.1 20251112 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09254' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_09254.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuBPAKL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_09254 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be565' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_be565.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqsFnod.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_be565 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20251112
-        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuBPAKL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_09254 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqsFnod.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_be565 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09254' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_09254.'
-        /usr/sbin/cc  -v -Wl,-v CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o -o cmTC_09254
-        make[1]: Leaving directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-IcXZcq'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be565' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_be565.'
         
       exitCode: 0
   -
@@ -2101,13 +2182,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-IcXZcq']
+        ignore line: [Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ZEkK3n']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_09254/fast]
-        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_09254.dir/build.make CMakeFiles/cmTC_09254.dir/build]
-        ignore line: [make[1]: Entering directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-IcXZcq']
-        ignore line: [Building C object CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/sbin/cc   -v -o CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/sbin/ninja -v cmTC_be565]
+        ignore line: [[1/2] /usr/sbin/cc   -v -o CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -2115,8 +2193,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20251112 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09254.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_09254.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccNMeTgv.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be565.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_be565.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccPPnZ4L.s]
         ignore line: [GNU C23 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20251112  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2130,14 +2208,13 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e7e806b0d021308da32115a1780fef1e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09254.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o /tmp/ccNMeTgv.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be565.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o /tmp/ccPPnZ4L.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_09254]
-        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_09254.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/sbin/cc  -v -Wl -v CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o -o cmTC_be565   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -2148,13 +2225,13 @@ events:
         ignore line: [gcc version 15.2.1 20251112 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09254' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_09254.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuBPAKL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_09254 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be565' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_be565.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqsFnod.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_be565 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccuBPAKL.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccqsFnod.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -2169,7 +2246,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_09254] ==> ignore
+          arg [cmTC_be565] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -2181,7 +2258,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -2196,7 +2273,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20251112]
-        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuBPAKL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_09254 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_09254.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqsFnod.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_be565 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_be565.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'C': /usr/sbin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -2233,8 +2310,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-Y8nBku"
-      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-Y8nBku"
+      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ZeiBaP"
+      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ZeiBaP"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2244,13 +2321,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-Y8nBku'
+        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ZeiBaP'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_85ee1/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_85ee1.dir/build.make CMakeFiles/cmTC_85ee1.dir/build
-        make[1]: Entering directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-Y8nBku'
-        Building CXX object CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/sbin/c++   -v -o CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/sbin/ninja -v cmTC_adddf
+        [1/2] /usr/sbin/c++   -v -o CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/c++
         Target: x86_64-pc-linux-gnu
@@ -2258,8 +2332,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20251112 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85ee1.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_85ee1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccbSWQz5.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_adddf.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_adddf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccBYlRHL.s
         GNU C++17 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20251112, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2276,14 +2350,13 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 4f062beaae229dc32234f13ba259a70e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85ee1.dir/'
-         as -v --64 -o CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbSWQz5.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_adddf.dir/'
+         as -v --64 -o CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccBYlRHL.s
         GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_85ee1
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_85ee1.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/sbin/c++  -v -Wl,-v CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_adddf   && :
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -2294,14 +2367,12 @@ events:
         gcc version 15.2.1 20251112 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85ee1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_85ee1.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cctk4vJC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_85ee1 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_adddf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_adddf.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1Hbx7z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_adddf /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20251112
-        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cctk4vJC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_85ee1 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1Hbx7z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_adddf /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85ee1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_85ee1.'
-        /usr/sbin/c++  -v -Wl,-v CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_85ee1
-        make[1]: Leaving directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-Y8nBku'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_adddf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_adddf.'
         
       exitCode: 0
   -
@@ -2342,13 +2413,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-Y8nBku']
+        ignore line: [Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ZeiBaP']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_85ee1/fast]
-        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_85ee1.dir/build.make CMakeFiles/cmTC_85ee1.dir/build]
-        ignore line: [make[1]: Entering directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-Y8nBku']
-        ignore line: [Building CXX object CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/sbin/c++   -v -o CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/sbin/ninja -v cmTC_adddf]
+        ignore line: [[1/2] /usr/sbin/c++   -v -o CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -2356,8 +2424,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20251112 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85ee1.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_85ee1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccbSWQz5.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_adddf.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_adddf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccBYlRHL.s]
         ignore line: [GNU C++17 (GCC) version 15.2.1 20251112 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20251112  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2374,14 +2442,13 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 4f062beaae229dc32234f13ba259a70e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85ee1.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbSWQz5.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_adddf.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccBYlRHL.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_85ee1]
-        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_85ee1.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/sbin/c++  -v -Wl -v CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_adddf   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -2392,13 +2459,13 @@ events:
         ignore line: [gcc version 15.2.1 20251112 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85ee1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_85ee1.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cctk4vJC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_85ee1 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_adddf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_adddf.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1Hbx7z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_adddf /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cctk4vJC.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1Hbx7z.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -2413,7 +2480,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_85ee1] ==> ignore
+          arg [cmTC_adddf] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -2425,7 +2492,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -2436,7 +2503,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20251112]
-        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cctk4vJC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_85ee1 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_85ee1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1Hbx7z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_adddf /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_adddf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/sbin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -2467,7 +2534,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "CMakeLists.txt:10 (find_path)"
+      - "CMakeLists.txt:12 (find_path)"
     mode: "path"
     variable: "ANTLR_INCLUDE_DIR"
     description: "Path to a file."
@@ -2492,6 +2559,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -2535,6 +2604,8 @@ events:
       - "/usr/games/antlr4-runtime.h"
       - "/usr/local/games/antlr4-runtime.h"
       - "/usr/lib/wsl/lib/antlr4-runtime.h"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/antlr4-runtime.h"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/antlr4-runtime.h"
       - "/mnt/c/Windows/system32/antlr4-runtime.h"
       - "/mnt/c/Windows/antlr4-runtime.h"
       - "/mnt/c/Windows/System32/Wbem/antlr4-runtime.h"
@@ -2578,6 +2649,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -2611,7 +2684,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindJava.cmake:222 (find_program)"
       - "/home/mayta/projects/CompilersTheory/FindANTLR.cmake:1 (find_package)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:42 (find_package)"
     mode: "program"
     variable: "Java_JAVA_EXECUTABLE"
     description: "Path to a program."
@@ -2636,6 +2709,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -2697,6 +2772,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -2728,7 +2805,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindJava.cmake:321 (find_program)"
       - "/home/mayta/projects/CompilersTheory/FindANTLR.cmake:1 (find_package)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:42 (find_package)"
     mode: "program"
     variable: "Java_JAR_EXECUTABLE"
     description: "Path to a program."
@@ -2753,6 +2830,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -2814,6 +2893,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -2845,7 +2926,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindJava.cmake:327 (find_program)"
       - "/home/mayta/projects/CompilersTheory/FindANTLR.cmake:1 (find_package)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:42 (find_package)"
     mode: "program"
     variable: "Java_JAVAC_EXECUTABLE"
     description: "Path to a program."
@@ -2870,6 +2951,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -2931,6 +3014,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -2962,7 +3047,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindJava.cmake:333 (find_program)"
       - "/home/mayta/projects/CompilersTheory/FindANTLR.cmake:1 (find_package)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:42 (find_package)"
     mode: "program"
     variable: "Java_JAVAH_EXECUTABLE"
     description: "Path to a program."
@@ -2987,6 +3072,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -3042,6 +3129,8 @@ events:
       - "/usr/games/javah"
       - "/usr/local/games/javah"
       - "/usr/lib/wsl/lib/javah"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/javah"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/javah"
       - "/mnt/c/Windows/system32/javah"
       - "/mnt/c/Windows/javah"
       - "/mnt/c/Windows/System32/Wbem/javah"
@@ -3099,6 +3188,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -3130,7 +3221,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindJava.cmake:339 (find_program)"
       - "/home/mayta/projects/CompilersTheory/FindANTLR.cmake:1 (find_package)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:42 (find_package)"
     mode: "program"
     variable: "Java_JAVADOC_EXECUTABLE"
     description: "Path to a program."
@@ -3155,6 +3246,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -3216,6 +3309,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -3247,7 +3342,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindJava.cmake:345 (find_program)"
       - "/home/mayta/projects/CompilersTheory/FindANTLR.cmake:1 (find_package)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:42 (find_package)"
     mode: "program"
     variable: "Java_IDLJ_EXECUTABLE"
     description: "Path to a program."
@@ -3272,6 +3367,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -3327,6 +3424,8 @@ events:
       - "/usr/games/idlj"
       - "/usr/local/games/idlj"
       - "/usr/lib/wsl/lib/idlj"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/idlj"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/idlj"
       - "/mnt/c/Windows/system32/idlj"
       - "/mnt/c/Windows/idlj"
       - "/mnt/c/Windows/System32/Wbem/idlj"
@@ -3384,6 +3483,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -3415,7 +3516,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindJava.cmake:351 (find_program)"
       - "/home/mayta/projects/CompilersTheory/FindANTLR.cmake:1 (find_package)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:42 (find_package)"
     mode: "program"
     variable: "Java_JARSIGNER_EXECUTABLE"
     description: "Path to a program."
@@ -3440,6 +3541,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -3501,6 +3604,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -3533,7 +3638,7 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:517 (find_program)"
       - "/usr/lib/cmake/llvm/FindFFI.cmake:26 (find_package)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:272 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "program"
     variable: "PKG_CONFIG_EXECUTABLE"
     description: "pkg-config executable"
@@ -3559,6 +3664,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -3612,6 +3719,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -3647,7 +3756,7 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
       - "/usr/lib/cmake/llvm/FindFFI.cmake:27 (pkg_check_modules)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:272 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib_PC_LIBFFI_ffi"
     description: "Path to a library."
@@ -3676,6 +3785,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -3709,7 +3820,7 @@ events:
     backtrace:
       - "/usr/lib/cmake/llvm/FindFFI.cmake:29 (find_path)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:272 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "path"
     variable: "FFI_INCLUDE_DIRS"
     description: "Path to a file."
@@ -3734,6 +3845,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -3774,6 +3887,8 @@ events:
       - "/usr/games/ffi.h"
       - "/usr/local/games/ffi.h"
       - "/usr/lib/wsl/lib/ffi.h"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/ffi.h"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/ffi.h"
       - "/mnt/c/Windows/system32/ffi.h"
       - "/mnt/c/Windows/ffi.h"
       - "/mnt/c/Windows/System32/Wbem/ffi.h"
@@ -3805,6 +3920,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -3838,7 +3955,7 @@ events:
     backtrace:
       - "/usr/lib/cmake/llvm/FindFFI.cmake:41 (find_library)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:272 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "FFI_LIBRARIES"
     description: "Path to a library."
@@ -3863,6 +3980,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -3903,6 +4022,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -3934,6 +4055,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -3967,7 +4090,7 @@ events:
     backtrace:
       - "/usr/lib/cmake/llvm/FindFFI.cmake:42 (find_library)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:272 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "FFI_STATIC_LIBRARIES"
     description: "Path to a library."
@@ -3992,6 +4115,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -4042,6 +4167,10 @@ events:
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
@@ -4113,6 +4242,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -4148,12 +4279,12 @@ events:
       - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "/usr/lib/cmake/llvm/FindFFI.cmake:62 (check_c_source_compiles)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:272 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     checks:
       - "Performing Test HAVE_FFI_CALL"
     directories:
-      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-JSpKBG"
-      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-JSpKBG"
+      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-VqtpYl"
+      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-VqtpYl"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -4163,17 +4294,11 @@ events:
       variable: "HAVE_FFI_CALL"
       cached: true
       stdout: |
-        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-JSpKBG'
+        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-VqtpYl'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_38e44/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_38e44.dir/build.make CMakeFiles/cmTC_38e44.dir/build
-        make[1]: Entering directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-JSpKBG'
-        Building C object CMakeFiles/cmTC_38e44.dir/src.c.o
-        /usr/sbin/cc -DHAVE_FFI_CALL   -o CMakeFiles/cmTC_38e44.dir/src.c.o -c /home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-JSpKBG/src.c
-        Linking C executable cmTC_38e44
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_38e44.dir/link.txt --verbose=1
-        /usr/sbin/cc CMakeFiles/cmTC_38e44.dir/src.c.o -o cmTC_38e44  /usr/lib/libffi.so
-        make[1]: Leaving directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-JSpKBG'
+        Run Build Command(s): /usr/sbin/ninja -v cmTC_82d2a
+        [1/2] /usr/sbin/cc -DHAVE_FFI_CALL   -o CMakeFiles/cmTC_82d2a.dir/src.c.o -c /home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-VqtpYl/src.c
+        [2/2] : && /usr/sbin/cc   CMakeFiles/cmTC_82d2a.dir/src.c.o -o cmTC_82d2a  /usr/lib/libffi.so && :
         
       exitCode: 0
   -
@@ -4185,7 +4310,7 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
       - "/usr/lib/cmake/llvm/FindLibEdit.cmake:17 (pkg_check_modules)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:279 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib_PC_LIBEDIT_edit"
     description: "Path to a library."
@@ -4214,6 +4339,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -4247,7 +4374,7 @@ events:
     backtrace:
       - "/usr/lib/cmake/llvm/FindLibEdit.cmake:19 (find_path)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:279 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "path"
     variable: "LibEdit_INCLUDE_DIRS"
     description: "Path to a file."
@@ -4274,6 +4401,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -4315,6 +4444,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -4348,7 +4479,7 @@ events:
     backtrace:
       - "/usr/lib/cmake/llvm/FindLibEdit.cmake:20 (find_library)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:279 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "LibEdit_LIBRARIES"
     description: "Path to a library."
@@ -4374,6 +4505,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -4415,6 +4548,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -4449,12 +4584,12 @@ events:
       - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:174 (try_compile)"
       - "/usr/lib/cmake/llvm/FindLibEdit.cmake:28 (check_include_file)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:279 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     checks:
       - "Looking for histedit.h"
     directories:
-      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-4eWVmy"
-      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-4eWVmy"
+      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-1Ri8Td"
+      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-1Ri8Td"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -4464,17 +4599,11 @@ events:
       variable: "HAVE_HISTEDIT_H"
       cached: true
       stdout: |
-        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-4eWVmy'
+        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-1Ri8Td'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3cb26/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_3cb26.dir/build.make CMakeFiles/cmTC_3cb26.dir/build
-        make[1]: Entering directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-4eWVmy'
-        Building C object CMakeFiles/cmTC_3cb26.dir/CheckIncludeFile.c.o
-        /usr/sbin/cc    -o CMakeFiles/cmTC_3cb26.dir/CheckIncludeFile.c.o -c /home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-4eWVmy/CheckIncludeFile.c
-        Linking C executable cmTC_3cb26
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_3cb26.dir/link.txt --verbose=1
-        /usr/sbin/cc CMakeFiles/cmTC_3cb26.dir/CheckIncludeFile.c.o -o cmTC_3cb26  /usr/lib/libedit.so
-        make[1]: Leaving directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-4eWVmy'
+        Run Build Command(s): /usr/sbin/ninja -v cmTC_74a56
+        [1/2] /usr/sbin/cc    -o CMakeFiles/cmTC_74a56.dir/CheckIncludeFile.c.o -c /home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-1Ri8Td/CheckIncludeFile.c
+        [2/2] : && /usr/sbin/cc   CMakeFiles/cmTC_74a56.dir/CheckIncludeFile.c.o -o cmTC_74a56  /usr/lib/libedit.so && :
         
       exitCode: 0
   -
@@ -4482,7 +4611,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindZLIB.cmake:165 (find_path)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:289 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "path"
     variable: "ZLIB_INCLUDE_DIR"
     description: "Path to a file."
@@ -4517,6 +4646,10 @@ events:
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/include/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/include/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/include/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/include/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/include/"
@@ -4596,6 +4729,10 @@ events:
       - "/usr/local/games/zlib.h"
       - "/usr/lib/wsl/lib/include/zlib.h"
       - "/usr/lib/wsl/lib/zlib.h"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/include/zlib.h"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/zlib.h"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/include/zlib.h"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/zlib.h"
       - "/mnt/c/Windows/system32/include/zlib.h"
       - "/mnt/c/Windows/system32/zlib.h"
       - "/mnt/c/Windows/include/zlib.h"
@@ -4646,6 +4783,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -4679,7 +4818,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindZLIB.cmake:195 (find_library)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:289 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "ZLIB_LIBRARY_RELEASE"
     description: "Path to a library."
@@ -4721,6 +4860,10 @@ events:
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/lib/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/lib/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/lib/"
@@ -4940,6 +5083,38 @@ events:
       - "/usr/lib/wsl/lib/"
       - "/usr/lib/wsl/lib/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/lib/"
       - "/mnt/c/Windows/system32/lib/"
       - "/mnt/c/Windows/system32/lib/"
@@ -5249,6 +5424,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -5282,7 +5459,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindZLIB.cmake:196 (find_library)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:289 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "ZLIB_LIBRARY_DEBUG"
     description: "Path to a library."
@@ -5325,6 +5502,10 @@ events:
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/lib/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/lib/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/lib/"
@@ -5564,6 +5745,42 @@ events:
       - "/usr/lib/wsl/lib/"
       - "/usr/lib/wsl/lib/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/lib/"
       - "/mnt/c/Windows/system32/lib/"
       - "/mnt/c/Windows/system32/lib/"
@@ -6099,6 +6316,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -6138,12 +6357,12 @@ events:
       - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "/usr/lib/cmake/zstd/zstdConfig.cmake:39 (find_dependency)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:294 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-v2ROvU"
-      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-v2ROvU"
+      source: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ieU9wx"
+      binary: "/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ieU9wx"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -6153,24 +6372,18 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-v2ROvU'
+        Change Dir: '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ieU9wx'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_30e14/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_30e14.dir/build.make CMakeFiles/cmTC_30e14.dir/build
-        make[1]: Entering directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-v2ROvU'
-        Building C object CMakeFiles/cmTC_30e14.dir/src.c.o
-        /usr/sbin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_30e14.dir/src.c.o -c /home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-v2ROvU/src.c
-        Linking C executable cmTC_30e14
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_30e14.dir/link.txt --verbose=1
-        /usr/sbin/cc CMakeFiles/cmTC_30e14.dir/src.c.o -o cmTC_30e14
-        make[1]: Leaving directory '/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-v2ROvU'
+        Run Build Command(s): /usr/sbin/ninja -v cmTC_64f29
+        [1/2] /usr/sbin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_64f29.dir/src.c.o -c /home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/CMakeScratch/TryCompile-ieU9wx/src.c
+        [2/2] : && /usr/sbin/cc   CMakeFiles/cmTC_64f29.dir/src.c.o -o cmTC_64f29   && :
         
       exitCode: 0
   -
     kind: "find_package-v1"
     backtrace:
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:294 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     name: "zstd"
     configs:
       -
@@ -6250,6 +6463,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -6288,7 +6503,7 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
       - "/usr/share/cmake/Modules/FindLibXml2.cmake:106 (pkg_check_modules)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:299 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib_PC_LIBXML_xml2"
     description: "Path to a library."
@@ -6317,6 +6532,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -6350,7 +6567,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindLibXml2.cmake:109 (find_path)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:299 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "path"
     variable: "LIBXML2_INCLUDE_DIR"
     description: "Path to a file."
@@ -6389,6 +6606,10 @@ events:
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/libxml2/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/libxml2/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/libxml2/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/libxml2/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/libxml2/"
@@ -6458,6 +6679,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -6491,7 +6714,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindLibXml2.cmake:123 (find_library)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:299 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "LIBXML2_LIBRARY"
     description: "Path to a library."
@@ -6519,6 +6742,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -6560,6 +6785,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -6593,7 +6820,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindLibXml2.cmake:129 (find_program)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:299 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "program"
     variable: "LIBXML2_XMLLINT_EXECUTABLE"
     description: "Path to a program."
@@ -6618,6 +6845,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -6668,6 +6897,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -6699,7 +6930,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:304 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     name: "CURL"
     configs:
       -
@@ -6785,6 +7016,22 @@ events:
         reason: "no_exist"
       -
         path: "/usr/lib/wsl/lib/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/curl-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -6928,6 +7175,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -6963,7 +7212,7 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
       - "/usr/share/cmake/Modules/FindCURL.cmake:191 (pkg_check_modules)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:304 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib_PC_CURL_curl"
     description: "Path to a library."
@@ -6992,6 +7241,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -7025,7 +7276,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindCURL.cmake:201 (find_path)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:304 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "path"
     variable: "CURL_INCLUDE_DIR"
     description: "Path to a file."
@@ -7051,6 +7302,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -7092,6 +7345,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -7125,7 +7380,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindCURL.cmake:208 (find_library)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:304 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "CURL_LIBRARY_RELEASE"
     description: "Path to a library."
@@ -7156,6 +7411,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -7197,6 +7454,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -7230,7 +7489,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindCURL.cmake:223 (find_library)"
       - "/usr/lib/cmake/llvm/LLVMConfig.cmake:304 (find_package)"
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     mode: "library"
     variable: "CURL_LIBRARY_DEBUG"
     description: "Path to a library."
@@ -7257,6 +7516,8 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
       - "/mnt/c/Windows/System32/Wbem/"
@@ -7308,6 +7569,10 @@ events:
       - "/usr/local/games/"
       - "/usr/lib/wsl/lib/"
       - "/usr/lib/wsl/lib/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/system32/"
       - "/mnt/c/Windows/"
@@ -7377,6 +7642,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -7408,7 +7675,7 @@ events:
   -
     kind: "find_package-v1"
     backtrace:
-      - "CMakeLists.txt:47 (find_package)"
+      - "CMakeLists.txt:55 (find_package)"
     name: "LLVM"
     configs:
       -
@@ -7488,6 +7755,8 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/mnt/c/Windows/system32"
         - "/mnt/c/Windows"
         - "/mnt/c/Windows/System32/Wbem"
@@ -7514,4 +7783,66 @@ events:
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:64 (find_library)"
+    mode: "library"
+    variable: "LLVM_MAIN_LIB"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "LLVM"
+    candidate_directories:
+      - "/usr/lib/"
+    found: "/usr/lib/libLLVM.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/mayta/miniconda3/condabin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/mnt/c/Windows/system32"
+        - "/mnt/c/Windows"
+        - "/mnt/c/Windows/System32/Wbem"
+        - "/mnt/c/Windows/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/Windows/System32/OpenSSH/"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/Leonardo Juscamayta/AppData/Local/Programs/Python/Python313"
+        - "/mnt/c/msys64/ucrt64/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
 ...

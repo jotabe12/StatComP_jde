@@ -1,0 +1,46 @@
+// Test de todas las características de StatComp
+
+// Strings
+"=== DEMO STATCOMP ===";
+
+// Variables escalares y operaciones
+float x = 10.5;
+float y = 20.3;
+"Suma:";
+x + y;
+"Multiplicación:";
+x * y;
+"Potencia 2^8:";
+2.0 ^ 8.0;
+
+// Arrays
+array float datos = {5.5, 8.2, 6.7, 9.1, 7.3, 8.8, 6.2};
+"";
+"Array de datos creado";
+
+// Funciones estadísticas
+"Media:";
+Mean(datos);
+"Mediana:";
+Median(datos);
+"Desv. Est.:";
+Stdev(datos);
+"Min y Max:";
+Min(datos);
+Max(datos);
+
+// Acceso a arrays
+"Primer elemento:";
+datos[0];
+"Tercer elemento:";
+datos[2];
+
+// Raíz cuadrada
+"Raíz de 144:";
+Square_root(144.0);
+
+// Expresiones complejas
+"Expresión compleja:";
+(datos[0] + datos[1]) * 2.0 - Square_root(25.0);
+
+"=== FIN ===";

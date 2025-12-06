@@ -1,0 +1,182 @@
+
+"=== BIENVENIDO A STATCOMP ===";
+"Lenguaje de Programación Estadística";
+"";
+
+"--- Sección 1: Variables Escalares ---";
+
+float temperatura = 25.5;
+float humedad = 60.0;
+float presion = 1013.25;
+
+"Temperatura:";
+temperatura;
+"Humedad:";
+humedad;
+"Presión atmosférica:";
+presion;
+
+"Promedio temperatura-humedad:";
+(temperatura + humedad) / 2.0;
+
+"Diferencia presión estándar:";
+presion - 1013.0;
+
+"";
+"--- Sección 2: Análisis de Arrays ---";
+
+array float calificaciones = {85.5, 92.0, 78.5, 95.0, 88.0, 91.5, 76.0, 89.0, 93.5, 87.0};
+
+"Dataset: Calificaciones de 10 estudiantes";
+"Calificaciones:";
+calificaciones[0];
+calificaciones[1];
+calificaciones[2];
+
+array float temperaturas = {22.5, 24.0, 23.5, 21.0, 25.5, 26.0, 24.5};
+
+"";
+"Dataset: Temperaturas de la semana (°C)";
+
+"";
+"--- Sección 3: Estadísticas Descriptivas ---";
+
+"CALIFICACIONES:";
+"Media:";
+Mean(calificaciones);
+
+"Mediana:";
+Median(calificaciones);
+
+"Desviación estándar:";
+Stdev(calificaciones);
+
+"Varianza:";
+Var(calificaciones);
+
+"Mínimo:";
+Min(calificaciones);
+
+"Máximo:";
+Max(calificaciones);
+
+"Suma total:";
+Sum(calificaciones);
+
+"Rango:";
+Range(calificaciones);
+
+"";
+"--- Sección 4: Operaciones con Arrays ---";
+
+"TEMPERATURAS SEMANALES:";
+"Temperatura promedio:";
+Mean(temperaturas);
+
+"Temperatura más alta:";
+Max(temperaturas);
+
+"Temperatura más baja:";
+Min(temperaturas);
+
+"Variabilidad (Stdev):";
+Stdev(temperaturas);
+
+"";
+"--- Sección 5: Operaciones Matemáticas ---";
+
+float base = 2.0;
+float exponente = 3.0;
+
+"Potencia (2^3):";
+base ^ exponente;
+
+"Raíz cuadrada de 16:";
+Square_root(16.0);
+
+"Raíz cuadrada de 100:";
+Square_root(100.0);
+
+float a = 10.0;
+float b = 5.0;
+
+"Suma:";
+a + b;
+
+"Resta:";
+a - b;
+
+"Multiplicación:";
+a * b;
+
+"División:";
+a / b;
+
+"Módulo (10 % 3):";
+10.0 % 3.0;
+
+"";
+"--- Sección 6: Expresiones Complejas ---";
+
+"Expresión: (10 + 5) * 3 - 8 / 2";
+(10.0 + 5.0) * 3.0 - 8.0 / 2.0;
+
+"Expresión: 2^3 + 3^2";
+2.0 ^ 3.0 + 3.0 ^ 2.0;
+
+"Negación: -(5 + 3)";
+-(5.0 + 3.0);
+
+"";
+"--- Sección 7: Acceso a Elementos ---";
+
+"Primera calificación:";
+calificaciones[0];
+
+"Quinta calificación:";
+calificaciones[4];
+
+"Última calificación:";
+calificaciones[9];
+
+"Suma de primera y última:";
+calificaciones[0] + calificaciones[9];
+
+"Promedio de dos valores:";
+(calificaciones[0] + calificaciones[1]) / 2.0;
+
+"";
+"--- Sección 8: Estadísticas Avanzadas ---";
+
+array float datos_experimento = {12.5, 15.0, 14.5, 16.0, 13.5, 15.5, 14.0, 16.5, 13.0, 15.0};
+
+"ANÁLISIS DEL EXPERIMENTO:";
+
+"Coeficiente de variación:";
+CoeffVar(datos_experimento);
+
+"Rango intercuartílico (IQR):";
+IQR(datos_experimento);
+
+"";
+"--- Sección 9: Resumen Final ---";
+
+float total_calificaciones = 885.0;
+float num_estudiantes = 10.0;
+
+"Total de calificaciones:";
+total_calificaciones;
+
+"Número de estudiantes:";
+num_estudiantes;
+
+"Promedio calculado manualmente:";
+total_calificaciones / num_estudiantes;
+
+"Comparación con Mean():";
+Mean(calificaciones);
+
+"";
+"=== ANÁLISIS COMPLETADO ===";
+"Gracias por usar StatComp";
+"Lenguaje de Programación Estadística";

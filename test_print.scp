@@ -1,0 +1,16 @@
+array int nums = {1, 2, 3, 4, 5};
+
+Mean(nums);
+Var(nums);
+Stdev(nums);
+Median(nums);
+Mode(nums);
+Range(nums);
+
+array float datos = {10, 20, 30, 40, 50};
+Mean(datos);
+Var(datos);
+Stdev(datos);
+
+Stdev(nums) + Mean(datos);
+Square_root(Var(nums));

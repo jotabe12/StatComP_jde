@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.30)
 
 set(CMAKE_BUILD_TYPE Debug)
-project(Calc)
+project(StatComp)
 
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(MY_BASE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../..")
@@ -41,25 +43,51 @@ find_package(ANTLR)
 message(STATUS "Found ANTLR: ${ANTLR_VERSION}")
 
 file(GLOB GFOURS "*.g4")
+# =========================================================
+# 3. GENERACIÓN DE CÓDIGO ANTLR
+# =========================================================
 antlr_target(${PROJECT_NAME} ${GFOURS} LEXER PARSER VISITOR)
 message(STATUS "ANTLR generated: ${ANTLR_${PROJECT_NAME}_OUTPUT_DIR}")
+
+# Asegurar que se incluyen los archivos generados
+include_directories(${ANTLR_${PROJECT_NAME}_OUTPUT_DIR})
 
 find_package(LLVM REQUIRED CONFIG)
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
 message(STATUS "Using LLVMConfig.cmake in: ${LLVM_DIR}")
 
-llvm_map_components_to_libnames(llvm_libs all)
+# Include LLVM directories and definitions
+include_directories(${LLVM_INCLUDE_DIRS})
+add_definitions(${LLVM_DEFINITIONS})
 
+# Use LLVM libraries - try dynamic library first
+find_library(LLVM_MAIN_LIB NAMES LLVM PATHS ${LLVM_LIBRARY_DIRS} NO_DEFAULT_PATH)
+if(LLVM_MAIN_LIB)
+    set(llvm_libs ${LLVM_MAIN_LIB})
+    message(STATUS "Using main LLVM library: ${LLVM_MAIN_LIB}")
+else()
+    # Fallback to component linking
+    llvm_map_components_to_libnames(llvm_libs all)
+    message(STATUS "Using LLVM component libraries")
+endif()
+
+# =========================================================
+# 4. COMPILACIÓN DEL EJECUTABLE
+# =========================================================
 file(GLOB SOURCES "*.cpp")
+
 add_executable(${PROJECT_NAME} ${SOURCES} ${ANTLR_${PROJECT_NAME}_CXX_OUTPUTS})
-target_link_libraries(${PROJECT_NAME} PRIVATE antlr4-runtime LLVM-21)
+
+# Usar las librerías LLVM específicas mapeadas en lugar de versión hardcoded
+target_link_libraries(${PROJECT_NAME} PRIVATE antlr4-runtime ${llvm_libs})
+
 target_include_directories(
   ${PROJECT_NAME} PRIVATE
   ${ANTLR_INCLUDE_DIR}
   ${ANTLR_${PROJECT_NAME}_OUTPUT_DIR}
   ${LLVM_INCLUDE_DIRS}
 )
-add_definitions(${LLVM_DEFINITIONS})
+
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
 
 # vim: set ts=4 sw=4 et sts=0 :

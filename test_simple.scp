@@ -1,0 +1,6 @@
+"Hola Mundo";
+"Resultado de la suma:";
+float x = 10.5;
+float y = 20.3;
+x + y;
+"Fin del programa";
