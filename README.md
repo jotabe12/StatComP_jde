@@ -131,5 +131,5 @@ cmake --build build
   Falta llamar `InitializeNativeTarget()` en `main` (archivo `src/main.cpp`).
 
 - **Error de Java al compilar:**  
-  Asegúrate de tener Java instalado y accesible.
+  Asegúrate de tener Java instalado y accesible, así como antlr-4.13.2-complete.jar descargado desde la página oficial de antlr4.
 
