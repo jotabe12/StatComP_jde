@@ -1,8 +1,0 @@
-/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/intrinsics_gen.dir
-/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/vt_gen.dir
-/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/omp_gen.dir
-/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/acc_gen.dir
-/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/target_parser_gen.dir
-/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/StatComp.dir
-/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/edit_cache.dir
-/home/mayta/projects/CompilersTheory/StatComP/build/CMakeFiles/rebuild_cache.dir
