@@ -1,0 +1,96 @@
+cmake_minimum_required(VERSION 3.10)
+project(StatComp)
+
+set(CMAKE_CXX_STANDARD 20)
+
+# =========================================================
+# CONFIGURACIÓN (RUTAS ACTUALIZADAS PARA NUEVO USUARIO)
+# =========================================================
+
+# 1.  ANTLR
+set(ANTLR4_ROOT "C:/Users/jeydi/DevTools/antlr4-runtime")
+set(ANTLR_JAR "C:/Users/jeydi/DevTools/antlr-4.13.2-complete.jar")
+
+include_directories(${ANTLR4_ROOT}/include/antlr4-runtime)
+link_directories(${ANTLR4_ROOT}/lib)
+
+# 2. LLVM
+find_package(LLVM REQUIRED CONFIG)
+
+message(STATUS "LLVM encontrado: ${LLVM_PACKAGE_VERSION}")
+message(STATUS "LLVM Include Dir: ${LLVM_INCLUDE_DIRS}")
+
+include_directories(${LLVM_INCLUDE_DIRS})
+separate_arguments(LLVM_DEFINITIONS_LIST NATIVE_COMMAND ${LLVM_DEFINITIONS})
+add_definitions(${LLVM_DEFINITIONS_LIST})
+
+# =========================================================
+# COMPONENTES DE LLVM PARA JIT
+# =========================================================
+llvm_map_components_to_libnames(llvm_libs 
+    core 
+    support 
+    native
+    nativecodegen
+    executionengine
+    mcjit
+    interpreter
+    transformutils
+    orcjit
+    jitlink
+)
+
+# =========================================================
+# GENERACIÓN DE CÓDIGO ANTLR
+# =========================================================
+find_package(Java COMPONENTS Runtime REQUIRED)
+
+set(ANTLR_OUTPUT_DIR "${CMAKE_CURRENT_BINARY_DIR}/generated")
+file(MAKE_DIRECTORY ${ANTLR_OUTPUT_DIR})
+
+file(GLOB ANTLR_GRAMMARS "*.g4")
+
+set(ANTLR_GENERATED_SRC 
+    "${ANTLR_OUTPUT_DIR}/StatCompLexer.cpp" 
+    "${ANTLR_OUTPUT_DIR}/StatCompParser.cpp" 
+    "${ANTLR_OUTPUT_DIR}/StatCompBaseVisitor.cpp" 
+    "${ANTLR_OUTPUT_DIR}/StatCompVisitor.cpp"
+)
+set(ANTLR_GENERATED_HDRS 
+    "${ANTLR_OUTPUT_DIR}/StatCompLexer.h" 
+    "${ANTLR_OUTPUT_DIR}/StatCompParser.h" 
+    "${ANTLR_OUTPUT_DIR}/StatCompBaseVisitor.h" 
+    "${ANTLR_OUTPUT_DIR}/StatCompVisitor.h"
+)
+
+add_custom_command(
+    OUTPUT ${ANTLR_GENERATED_SRC} ${ANTLR_GENERATED_HDRS}
+    COMMAND ${Java_JAVA_EXECUTABLE} -jar "${ANTLR_JAR}" 
+            -Dlanguage=Cpp -no-listener -visitor 
+            -o "${ANTLR_OUTPUT_DIR}" 
+            -package antlr4 
+            ${ANTLR_GRAMMARS}
+    DEPENDS ${ANTLR_GRAMMARS}
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    COMMENT "Generando ANTLR..."
+)
+
+include_directories(${ANTLR_OUTPUT_DIR})
+
+# Librería de ANTLR
+find_library(ANTLR4_LIB NAMES antlr4-runtime PATHS ${ANTLR4_ROOT}/lib NO_DEFAULT_PATH)
+
+# =========================================================
+# COMPILACIÓN FINAL
+# =========================================================
+file(GLOB SOURCES "*.cpp")
+add_executable(StatComp ${SOURCES} ${ANTLR_GENERATED_SRC})
+
+target_link_libraries(StatComp PRIVATE ${llvm_libs} ${ANTLR4_LIB})
+
+# Copiar DLL de ANTLR
+add_custom_command(TARGET StatComp POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${ANTLR4_ROOT}/bin/libantlr4-runtime.dll"
+    $<TARGET_FILE_DIR:StatComp>
+)
